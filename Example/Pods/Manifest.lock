@@ -1,0 +1,24 @@
+PODS:
+  - lottie-ios (4.1.2)
+  - WannaSDK (6.0.0)
+  - WannaUI (1.0.0):
+    - lottie-ios (< 5, > 2)
+    - WannaSDK (~> 6.0)
+
+DEPENDENCIES:
+  - WannaUI (~> 1.0)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - lottie-ios
+    - WannaSDK
+    - WannaUI
+
+SPEC CHECKSUMS:
+  lottie-ios: b3846a9fa8ca1a1a3bebfa256ebe8b6fd4aaaaad
+  WannaSDK: bc16d89d7df68e0998a1b1a2e78556073613761e
+  WannaUI: 2e314c15902b06eeafb21e314ce660177022bdd1
+
+PODFILE CHECKSUM: ed35ca25c6849f1e997b0ed622066901d0b7a864
+
+COCOAPODS: 1.11.3

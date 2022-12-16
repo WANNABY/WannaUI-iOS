@@ -1,0 +1,4 @@
+framework module WannaUI {
+  header "WannaUI-Swift.h"
+  requires objc
+}

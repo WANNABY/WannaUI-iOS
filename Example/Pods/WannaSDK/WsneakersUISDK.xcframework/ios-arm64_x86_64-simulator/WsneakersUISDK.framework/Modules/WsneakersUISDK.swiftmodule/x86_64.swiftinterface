@@ -1,0 +1,571 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name WsneakersUISDK
+import Combine
+import CryptoKit
+import Foundation
+import Metal
+import MetalKit
+import Swift
+import SwiftUI
+import UIKit
+
+@_exported import WsneakersUISDK
+import _Concurrency
+import os
+import os.signpost
+import zlib
+@_hasMissingDesignatedInitializers @objc final public class RenderModelInfo : ObjectiveC.NSObject {
+  @objc final public let renderModelID: Swift.String
+  @objc final public let renderModelType: Swift.String
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class CameraNode {
+  @objc deinit
+}
+@available(iOS 13.0, *)
+public struct WannaConfig {
+}
+@available(iOS 13.0, *)
+extension WsneakersUISDK.WannaConfig {
+  @_hasMissingDesignatedInitializers final public class Builder {
+    @objc deinit
+  }
+}
+@available(iOS 13.0, *)
+extension WsneakersUISDK.WannaConfig.Builder {
+  final public func withLicense(_ license: Swift.String) -> Self
+  final public func withCacheSize(bytes: Swift.UInt) -> Self
+  final public func withCacheSize(megabytes: Swift.UInt) -> Self
+  final public func withAppearance(_ appearance: WsneakersUISDK.WannaAppearance) -> Self
+  final public func build() throws -> WsneakersUISDK.WannaConfig
+}
+@available(iOS 13.0, *)
+extension WsneakersUISDK.WannaConfig.Builder {
+  final public func withMetaUrlPrefix(_ metaUrlPrefix: Foundation.URL?) -> Self
+  final public func withMetaExpirationTimeInterval(_ metaExpirationTimeInterval: Foundation.TimeInterval) -> Self
+}
+extension Swift.Bool {
+  public var asAnalyticsString: Swift.String {
+    get
+  }
+}
+extension Swift.Float {
+  public var asAnalyticsString: Swift.String {
+    get
+  }
+}
+extension Swift.String {
+  public var asAnalyticsString: Swift.String {
+    get
+  }
+}
+@available(iOS 13.0, *)
+extension WsneakersUISDK.RenderModel {
+  @objc dynamic public convenience init(renderModelID: Swift.String, rmdescURL: Foundation.URL, dataPacks: [Swift.String : Foundation.URL], cancel: @escaping () -> Swift.Void)
+}
+public protocol WannaViewControllerNavigationDelegate : AnyObject {
+  func onLeftNavigationButton()
+  func onRightNavigationButton()
+}
+@objc @_hasMissingDesignatedInitializers @available(iOS 13.0, *)
+@_Concurrency.MainActor(unsafe) final public class WannaViewController : WsneakersUISDK.ReactiveViewController {
+  @_Concurrency.MainActor(unsafe) weak final public var dataSource: WsneakersUISDK.WannaTryOnDataSource? {
+    get
+    set(newValue)
+  }
+  @_Concurrency.MainActor(unsafe) weak final public var delegate: WsneakersUISDK.WannaTryOnDelegate? {
+    get
+    set(newValue)
+  }
+  @_Concurrency.MainActor(unsafe) weak final public var navigationDelegate: WsneakersUISDK.WannaViewControllerNavigationDelegate?
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override final public var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
+    @_Concurrency.MainActor(unsafe) @objc get
+  }
+  @_Concurrency.MainActor(unsafe) final public func reloadData()
+  @_Concurrency.MainActor(unsafe) final public func reloadModel()
+  @_Concurrency.MainActor(unsafe) final public func selectModel(at index: Swift.Int)
+  @_Concurrency.MainActor(unsafe) final public func preloadModel(at index: Swift.Int)
+  @_Concurrency.MainActor(unsafe) final public func setLeftNavigationBarImage(_ image: UIKit.UIImage?)
+  @_Concurrency.MainActor(unsafe) final public func setRightNavigationBarImage(_ image: UIKit.UIImage?)
+  @objc deinit
+}
+@available(iOS 13.0, *)
+open class WannaFlow {
+  open class var isDeviceSupported: Swift.Bool {
+    get
+  }
+  open var modelsController: WsneakersUISDK.WannaModelsController {
+    get
+  }
+  public init(config: WsneakersUISDK.WannaConfig)
+  open func start() throws -> WsneakersUISDK.WannaFlow.ViewController
+  @objc deinit
+}
+@available(iOS 13.0, *)
+public protocol SimplifiedUISDKViewer3DDelegate : AnyObject {
+  func viewer(_ viewer: WsneakersUISDK.SimplifiedUISDKViewer3D, failedSettingPointOfInterestWithError error: Swift.Error)
+  func viewer(_ viewer: WsneakersUISDK.SimplifiedUISDKViewer3D, failedUpdateModelWithId modelId: Swift.String, error: Swift.Error)
+  func viewer(_ viewer: WsneakersUISDK.SimplifiedUISDKViewer3D, updatedProgress progress: Swift.Float, forModelWithId: Swift.String)
+  func viewer(_ viewer: WsneakersUISDK.SimplifiedUISDKViewer3D, didLoadModelWithId modelId: Swift.String)
+  func viewer(_ viewer: WsneakersUISDK.SimplifiedUISDKViewer3D, didLoadDataPacks dataPacks: [Swift.String : Foundation.URL])
+  func viewer(_ viewer: WsneakersUISDK.SimplifiedUISDKViewer3D, didUpdateModelWithId modelId: Swift.String)
+  func viewer(_ viewer: WsneakersUISDK.SimplifiedUISDKViewer3D, initProgressUpdated progress: Swift.Float)
+  func viewerInitializationStarted(_ viewer: WsneakersUISDK.SimplifiedUISDKViewer3D)
+  func viewer(_ viewer: WsneakersUISDK.SimplifiedUISDKViewer3D, initializationFailedWithError error: Swift.Error)
+  func viewerInitialized(_ viewer: WsneakersUISDK.SimplifiedUISDKViewer3D)
+}
+@available(iOS 13.0, *)
+extension WsneakersUISDK.SimplifiedUISDKViewer3DDelegate {
+  public func viewer(_ viewer: WsneakersUISDK.SimplifiedUISDKViewer3D, failedSettingPointOfInterestWithError error: Swift.Error)
+  public func viewer(_ viewer: WsneakersUISDK.SimplifiedUISDKViewer3D, failedUpdateModelWithId modelId: Swift.String, error: Swift.Error)
+  public func viewer(_ viewer: WsneakersUISDK.SimplifiedUISDKViewer3D, updatedProgress progress: Swift.String, forModelWithId: Swift.String)
+  public func viewer(_ viewer: WsneakersUISDK.SimplifiedUISDKViewer3D, didLoadModelWithId modelId: Swift.String)
+  public func viewer(_ viewer: WsneakersUISDK.SimplifiedUISDKViewer3D, didLoadDataPacks dataPacks: [Swift.String : Foundation.URL])
+  public func viewer(_ viewer: WsneakersUISDK.SimplifiedUISDKViewer3D, didUpdateModelWithId modelId: Swift.String)
+  public func viewer(_ viewer: WsneakersUISDK.SimplifiedUISDKViewer3D, initProgressUpdated progress: Swift.Float)
+  public func viewerInitializationStarted(_ viewer: WsneakersUISDK.SimplifiedUISDKViewer3D)
+  public func viewer(_ viewer: WsneakersUISDK.SimplifiedUISDKViewer3D, initializationFailedWithError error: Swift.Error)
+  public func viewerInitialized(_ viewer: WsneakersUISDK.SimplifiedUISDKViewer3D)
+}
+@objc public protocol SessionAnalyticsBackwardCompatibility {
+  @objc func trackSessionInitialized(duration: Foundation.TimeInterval, renderModelType: WsneakersUISDK.RenderModelType)
+  @objc func trackMeasureSessionInitialization(duration: Foundation.TimeInterval, downloadDuration: Foundation.TimeInterval)
+  @objc func trackSessionInitializationError(_ error: Swift.Error?, place: Swift.String, duration: Foundation.TimeInterval)
+  @objc func trackSessionInitializationError(message: Swift.String, place: Swift.String, duration: Foundation.TimeInterval)
+}
+@_hasMissingDesignatedInitializers @available(iOS 13.0, *)
+@objc final public class RenderModelDataPack : ObjectiveC.NSObject {
+  @objc final public var dataPacks: [Swift.String : Foundation.URL] {
+    @objc get
+  }
+  @objc deinit
+}
+@available(iOS 13.0, *)
+extension WsneakersUISDK.RenderModelStorage {
+  @_hasMissingDesignatedInitializers @objc final public class Analytics : ObjectiveC.NSObject {
+    @objc deinit
+  }
+}
+@available(iOS 13.0, *)
+extension WsneakersUISDK.RenderModelStorage.Analytics : WsneakersUISDK.SessionAnalyticsBackwardCompatibility {
+  @objc final public func trackSessionInitialized(duration: Foundation.TimeInterval, renderModelType: WsneakersUISDK.RenderModelType)
+  @objc final public func trackSessionInitializationError(_ error: Swift.Error?, place: Swift.String, duration: Foundation.TimeInterval)
+  @objc final public func trackSessionInitializationError(message: Swift.String, place: Swift.String, duration: Foundation.TimeInterval)
+  @objc final public func trackMeasureSessionInitialization(duration: Foundation.TimeInterval, downloadDuration: Foundation.TimeInterval)
+}
+@available(iOS 13.0, *)
+extension WsneakersUISDK.RenderModelStorage.Analytics : WsneakersUISDK.ModelAnalyticsBackwardCompatibility {
+  @objc final public func trackMeasureModelDownload(modelId: Swift.String, duration: Foundation.TimeInterval)
+  @objc final public func trackModelDownloadError(_ error: Swift.Error?, place: Swift.String, modelId: Swift.String, duration: Foundation.TimeInterval)
+}
+@objc extension Foundation.NSError {
+  @objc dynamic public var isWannaSDKCancelError: Swift.Bool {
+    @objc get
+  }
+}
+@_hasMissingDesignatedInitializers @objc final public class WannaDebugCamera : ObjectiveC.NSObject {
+  @objc final public var isEnabled: Swift.Bool {
+    get
+  }
+  @objc final public let exposureTargetBias: Swift.Int
+  @objc final public let exposureTargetOffset: Swift.Double
+  @objc final public var sampleBuffer: CoreMedia.CMSampleBuffer? {
+    @objc get
+  }
+  @objc final public func startWithImage(_ image: UIKit.UIImage)
+  @objc final public func stop()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc final public class RenderModelDownloadTask : WsneakersUISDK.WsneakersUISDKDownloadTask {
+  @objc override final public func cancel()
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension Foundation.URLSessionTask : Combine.Cancellable {
+}
+@_inheritsConvenienceInitializers @objc final public class WannaDebug : ObjectiveC.NSObject {
+  @available(iOS 13.0, *)
+  @objc public static var camera: WsneakersUISDK.WannaDebugCamera
+  @available(iOS 13.0, *)
+  @objc public static var deepLinkHandler: WsneakersUISDK.WannaDeepLinkHandler
+  @objc final public class func startMeasures()
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public protocol CoreSDKAnalyticsBackwardCompatibility {
+  @objc func trackCoreSDKEvent(name: Swift.String, parameters: [Swift.String : Swift.String])
+}
+public protocol WannaTryOnDataSource : AnyObject {
+  func titleForItem(at index: Swift.Int) -> Swift.String
+  func subtitleForItem(at index: Swift.Int) -> Swift.String
+  func imageForItem(at index: Swift.Int) -> UIKit.UIImage
+  func itemAtIndexIsInTheBag(_ index: Swift.Int) -> Swift.Bool?
+  func priceForItem(at index: Swift.Int) -> Swift.String?
+  func attributedTitleForItem(atIndex index: Swift.Int) -> Foundation.NSAttributedString
+  func attributedSubtitleForItem(at index: Swift.Int) -> Foundation.NSAttributedString
+}
+extension WsneakersUISDK.WannaTryOnDataSource {
+  public func priceForItem(at index: Swift.Int) -> Swift.String?
+  public func itemAtIndexIsInTheBag(_ index: Swift.Int) -> Swift.Bool?
+  public func attributedTitleForItem(atIndex index: Swift.Int) -> Foundation.NSAttributedString
+  public func attributedSubtitleForItem(at index: Swift.Int) -> Foundation.NSAttributedString
+}
+extension WsneakersUISDK.WsneakersUISDKRenderModelStorage {
+  public enum Error : Swift.Error {
+    case unexpected
+    public static func == (a: WsneakersUISDK.WsneakersUISDKRenderModelStorage.Error, b: WsneakersUISDK.WsneakersUISDKRenderModelStorage.Error) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public func loadModelsSync() -> Swift.Result<[WsneakersUISDK.WsneakersUISDKModelInfo], Swift.Error>
+}
+@available(iOS 13.0, *)
+@objc public protocol CoreSDKInfo {
+  @objc var coreSDKVersion: Swift.String { get }
+  @objc var isDetectorEnabled: Swift.Bool { get }
+  @objc var isDebugBuild: Swift.Bool { get }
+}
+extension WsneakersUISDK.WsneakersUISDKInfo : WsneakersUISDK.CoreSDKInfo {
+}
+@available(iOS 13.0, *)
+extension WsneakersUISDK.WannaConfig.Builder {
+  public enum Error : Swift.Error {
+    case invalidLicenseString
+    case licenseNotSet
+    public static func == (a: WsneakersUISDK.WannaConfig.Builder.Error, b: WsneakersUISDK.WannaConfig.Builder.Error) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+@_hasMissingDesignatedInitializers final public class DimensionsNode {
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class WannaDebugMeasurerProducer : ObjectiveC.NSObject {
+  @objc public static var shared: WsneakersUISDK.WannaDebugMeasurerProducer
+  @available(iOS 13, *)
+  @objc public func makeMeasurer(forProcessType processType: WsneakersUISDK.WannaDebugProcessType) -> WsneakersUISDK.WannaDebugMeasurer
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @available(iOS 13.0, *)
+@_Concurrency.MainActor(unsafe) final public class WannaView : WsneakersUISDK.ReactiveView {
+  @_Concurrency.MainActor(unsafe) weak final public var dataSource: WsneakersUISDK.WannaTryOnDataSource?
+  @_Concurrency.MainActor(unsafe) weak final public var delegate: WsneakersUISDK.WannaTryOnDelegate?
+  @_Concurrency.MainActor(unsafe) final public func reloadData()
+  @_Concurrency.MainActor(unsafe) final public func reloadModel()
+  @_Concurrency.MainActor(unsafe) final public func selectModel(at index: Swift.Int)
+  @_Concurrency.MainActor(unsafe) final public func preloadModel(at index: Swift.Int)
+  @objc deinit
+}
+@available(iOS 13.0, *)
+extension WsneakersUISDK.WannaView {
+  @_Concurrency.MainActor(unsafe) public convenience init(modelIds: [Swift.String], contentType: WsneakersUISDK.WannaContentType) throws
+}
+@available(iOS 13.0, *)
+extension WsneakersUISDK.WannaViewController {
+  @_Concurrency.MainActor(unsafe) public convenience init(modelIds: [Swift.String], contentType: WsneakersUISDK.WannaContentType) throws
+}
+@_hasMissingDesignatedInitializers @objc public class WannaDebugMeasurer : ObjectiveC.NSObject {
+  @objc public func start()
+  @objc public func finish()
+  @objc deinit
+}
+@objc public protocol ModelAnalyticsBackwardCompatibility {
+  @objc func trackMeasureModelDownload(modelId: Swift.String, duration: Foundation.TimeInterval)
+  @objc func trackModelDownloadError(_ error: Swift.Error?, place: Swift.String, modelId: Swift.String, duration: Foundation.TimeInterval)
+}
+public protocol WannaModelsController : AnyObject {
+  func update(modelId: Swift.String)
+}
+@available(iOS 13.0, *)
+extension WsneakersUISDK.WsneakersUISDKViewer3D {
+  public struct Dimensions {
+  }
+}
+@available(iOS 13.0, *)
+extension WsneakersUISDK.WsneakersUISDKViewer3D.Dimensions {
+  public func show()
+  public func hide()
+}
+@objc @_inheritsConvenienceInitializers @available(iOS 13.0, *)
+@_Concurrency.MainActor(unsafe) open class ReactiveViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) final public let onViewDidLoad: Combine.AnyPublisher<Swift.Void, Swift.Never>
+  @_Concurrency.MainActor(unsafe) final public let onViewWillAppear: Combine.AnyPublisher<Swift.Bool, Swift.Never>
+  @_Concurrency.MainActor(unsafe) final public let onViewDidAppear: Combine.AnyPublisher<Swift.Bool, Swift.Never>
+  @_Concurrency.MainActor(unsafe) final public let onViewWillDisappear: Combine.AnyPublisher<Swift.Bool, Swift.Never>
+  @_Concurrency.MainActor(unsafe) final public let onViewDidDisappear: Combine.AnyPublisher<Swift.Bool, Swift.Never>
+  @_Concurrency.MainActor(unsafe) final public let onMemoryWarning: Combine.AnyPublisher<Swift.Void, Swift.Never>
+  @_Concurrency.MainActor(unsafe) final public let onViewWillLayoutSubviews: Combine.AnyPublisher<Swift.Void, Swift.Never>
+  @_Concurrency.MainActor(unsafe) final public let onViewDidLayoutSubviews: Combine.AnyPublisher<Swift.Void, Swift.Never>
+  @_Concurrency.MainActor(unsafe) final public let onDeinit: Combine.AnyPublisher<Swift.Void, Swift.Never>
+  @_Concurrency.MainActor(unsafe) final public let onIsActive: Combine.AnyPublisher<Swift.Bool, Swift.Never>
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillLayoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLayoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func didReceiveMemoryWarning()
+}
+public enum WannaContentType {
+  case sneakers
+  case watch
+  public static func == (a: WsneakersUISDK.WannaContentType, b: WsneakersUISDK.WannaContentType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@available(iOS 13.0, *)
+extension WsneakersUISDK.WsneakersUISDKViewer3D {
+  public struct Camera {
+  }
+}
+@available(iOS 13.0, *)
+extension WsneakersUISDK.WsneakersUISDKViewer3D.Camera {
+  public var name: Swift.String {
+    get
+  }
+  public func select()
+}
+@_hasMissingDesignatedInitializers @available(iOS 13.0, *)
+@objc final public class RenderModel : ObjectiveC.NSObject {
+  @objc final public var renderModelID: Swift.String {
+    @objc get
+  }
+  @objc final public var rmdescURL: Foundation.URL {
+    @objc get
+  }
+  @objc final public var dataPacks: [Swift.String : Foundation.URL] {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum RenderModelType : Swift.Int {
+  case sneakers
+  case watch
+  case bag
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum WannaDebugProcessType : Swift.Int {
+  case cameraOutput
+  case completeFrame
+  case fps
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum WsneakersUISDKViewer3DError : Swift.Int, Swift.Error {
+  case callSetupFirst
+  case outOfRange
+  case sessionCreationFailed
+  case licenseNotSupported
+  case simulatorNotSupported
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public static var _nsErrorDomain: Swift.String {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension WsneakersUISDK.WsneakersUISDKViewer3DError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @available(iOS 13.0, *)
+@objc @_Concurrency.MainActor(unsafe) final public class WsneakersUISDKViewer3D : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) final public func setup(clientConfig: Swift.String, onProgress: ((Swift.Float) -> Swift.Bool)?, onSuccess: (() -> Swift.Void)?, onError: ((Swift.Error) -> Swift.Void)?)
+  @objc @_Concurrency.MainActor(unsafe) final public func setModel(_ model: WsneakersUISDK.WsneakersUISDKRenderModel, completion: ((Swift.Bool, Swift.Error?) -> Swift.Void)? = nil)
+  @objc @_Concurrency.MainActor(unsafe) final public func start() throws
+  @objc @_Concurrency.MainActor(unsafe) final public func stop()
+  @objc @_Concurrency.MainActor(unsafe) final public func presentObject(at index: Swift.Int) throws
+  @objc @_Concurrency.MainActor(unsafe) final public func selectCamera(at index: Swift.Int) throws
+  @_Concurrency.MainActor(unsafe) final public func setDebugFPSInfoDelegate(_ delegate: WsneakersUISDK.DebugFPSInfoDelegate)
+  @_Concurrency.MainActor(unsafe) final public func setConfiguration(_ configuration: WsneakersUISDK.WsneakersUISDKViewer3DConfiguration)
+  @_Concurrency.MainActor(unsafe) final public func setAppearance(_ appearance: WsneakersUISDK.WannaAppearance)
+  @_Concurrency.MainActor(unsafe) final public func showMain(_ isVisible: Swift.Bool = true)
+  @_Concurrency.MainActor(unsafe) final public func showUnknown(_ isVisible: Swift.Bool = true)
+  @_Concurrency.MainActor(unsafe) final public func showStrap(_ isVisible: Swift.Bool = true)
+  @_Concurrency.MainActor(unsafe) final public func showDimension(_ isVisible: Swift.Bool = true, animated: Swift.Bool = true)
+  @_Concurrency.MainActor(unsafe) final public func switchDimensionMode(_ isEnabled: Swift.Bool = true)
+  @_Concurrency.MainActor(unsafe) final public func setScale(fromScale: Swift.Float, toScale: Swift.Float, duration: Foundation.TimeInterval, animated: Swift.Bool, completion: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor(unsafe) final public func resetAnimationStrategy()
+  @_Concurrency.MainActor(unsafe) final public var hasStrap: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) final public var hasDimension: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) final public var cameras: [WsneakersUISDK.WsneakersUISDKViewer3D.Camera] {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) final public var fallbackCamera: WsneakersUISDK.WsneakersUISDKViewer3D.Camera? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) final public var dimensionsCamera: WsneakersUISDK.WsneakersUISDKViewer3D.Camera? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) final public var dimensions: WsneakersUISDK.WsneakersUISDKViewer3D.Dimensions {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol DebugFPSInfoDelegate {
+  func onFrameReady()
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13.0, *)
+@objc final public class RenderModelStorage : ObjectiveC.NSObject {
+  @objc final public var analytics: WsneakersUISDK.RenderModelStorage.Analytics {
+    @objc get
+  }
+  @available(*, unavailable, message: "Use __your_init__ instead")
+  @objc override dynamic public init()
+  @objc deinit
+}
+@available(iOS 13.0, *)
+extension WsneakersUISDK.RenderModelStorage : WsneakersUISDK.SessionBackwardCompatibility {
+  @objc final public var hasWatermark: Swift.Bool {
+    @objc get
+  }
+  @objc dynamic public convenience init(config: Swift.String) throws
+  @objc final public func dataPack(renderModelType: WsneakersUISDK.RenderModelType, progressHandler: ((Swift.Float) -> Swift.Bool)?, completion: @escaping (WsneakersUISDK.RenderModelDataPack?, Swift.Error?) -> Swift.Void) -> WsneakersUISDK.RenderModelDownloadTask
+}
+@available(iOS 13.0, *)
+extension WsneakersUISDK.RenderModelStorage : WsneakersUISDK.StorageBackwardCompatibility {
+  @objc dynamic public convenience init(config: Swift.String, cacheSize: Darwin.size_t) throws
+  @objc final public func modelInfos(completion: @escaping ([WsneakersUISDK.RenderModelInfo]?, Swift.Error?) -> Swift.Void)
+  @objc final public func model(id: Swift.String, progressHandler: ((WsneakersUISDK.RenderModelDownloadTask, Swift.Float) -> Swift.Void)?, completion: @escaping (WsneakersUISDK.RenderModel?, Swift.Error?) -> Swift.Void) -> WsneakersUISDK.RenderModelDownloadTask
+  @objc final public func clearCache() throws
+}
+@available(iOS 13.0, *)
+@objc public protocol SessionBackwardCompatibility {
+  @objc var hasWatermark: Swift.Bool { get }
+  @objc init(config: Swift.String) throws
+  @objc func dataPack(renderModelType: WsneakersUISDK.RenderModelType, progressHandler: ((Swift.Float) -> Swift.Bool)?, completion: @escaping (WsneakersUISDK.RenderModelDataPack?, Swift.Error?) -> Swift.Void) -> WsneakersUISDK.RenderModelDownloadTask
+}
+@available(iOS 13.0, *)
+public struct WannaAppearance {
+  public var usesMetricSystem: Swift.Bool
+  public init()
+}
+@available(iOS 13.0, *)
+extension WsneakersUISDK.WannaAppearance {
+  public static var `default`: WsneakersUISDK.WannaAppearance
+}
+@available(iOS 13.0, *)
+extension WsneakersUISDK.WannaFlow {
+  @objc @_Concurrency.MainActor(unsafe) open class ViewController : UIKit.UIViewController {
+    @_Concurrency.MainActor(unsafe) final public let flow: WsneakersUISDK.WannaFlow
+    @_Concurrency.MainActor(unsafe) public var canceller: Combine.AnyCancellable? {
+      get
+    }
+    @_Concurrency.MainActor(unsafe) public init(flow: WsneakersUISDK.WannaFlow)
+    @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+    @objc deinit
+  }
+}
+@available(iOS 13.0, *)
+extension WsneakersUISDK.WannaFlow.ViewController {
+  @_Concurrency.MainActor(unsafe) public func addPreview(_ preview: UIKit.UIView)
+  @_Concurrency.MainActor(unsafe) public func addPreview(_ preview: UIKit.UIViewController)
+}
+public protocol WannaTryOnDelegate : AnyObject {
+  func onAddToBag()
+  func didSelectItemAt(index: Swift.Int)
+}
+@objc @_inheritsConvenienceInitializers @available(iOS 13.0, *)
+@_Concurrency.MainActor(unsafe) final public class SimplifiedUISDKViewer3D : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) weak final public var delegate: WsneakersUISDK.SimplifiedUISDKViewer3DDelegate?
+  @_Concurrency.MainActor(unsafe) final public var hasStrap: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) final public var hasDimension: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) final public var cameras: [WsneakersUISDK.WsneakersUISDKViewer3D.Camera] {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) final public var dimensionsCamera: WsneakersUISDK.WsneakersUISDKViewer3D.Camera? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) final public func setup(withFlow flow: WsneakersUISDK.WannaFlow)
+  @_Concurrency.MainActor(unsafe) final public func setup(withConfig config: Swift.String, cacheSize: Swift.Int, isDeviceSupported: Swift.Bool, appearance: WsneakersUISDK.WannaAppearance)
+  @_Concurrency.MainActor(unsafe) final public func downloadAndSetModelWithId(_ modelId: Swift.String) -> WsneakersUISDK.WsneakersUISDKDownloadTask?
+  @_Concurrency.MainActor(unsafe) final public func showMain(_ isVisible: Swift.Bool = true)
+  @_Concurrency.MainActor(unsafe) final public func showUnknown(_ isVisible: Swift.Bool = true)
+  @_Concurrency.MainActor(unsafe) final public func showStrap(_ isVisible: Swift.Bool = true)
+  @_Concurrency.MainActor(unsafe) final public func showDimension(_ isVisible: Swift.Bool = true, animated: Swift.Bool = true)
+  @_Concurrency.MainActor(unsafe) final public func switchDimensionMode(_ isEnabled: Swift.Bool = true)
+  @_Concurrency.MainActor(unsafe) final public func selectPointOfInterest(atIndex index: Swift.Int)
+  @_Concurrency.MainActor(unsafe) final public func setScale(fromScale: Swift.Float, toScale: Swift.Float, duration: Foundation.TimeInterval, animated: Swift.Bool, completion: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor(unsafe) final public func resetAnimationStrategy()
+  @objc deinit
+}
+@available(iOS 13.0, *)
+extension WsneakersUISDK.WannaConfig {
+  public static var builder: WsneakersUISDK.WannaConfig.Builder
+}
+@objc @_inheritsConvenienceInitializers @available(iOS 13.0, *)
+@_Concurrency.MainActor(unsafe) public class ReactiveView : UIKit.UIView {
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc override dynamic public func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func removeFromSuperview()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func willMove(toSuperview newSuperview: UIKit.UIView?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func didMoveToSuperview()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func setNeedsLayout()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+}
+@available(iOS 13.0, *)
+@objc public protocol StorageBackwardCompatibility {
+  @objc init(config: Swift.String, cacheSize: Darwin.size_t) throws
+  @objc func modelInfos(completion: @escaping ([WsneakersUISDK.RenderModelInfo]?, Swift.Error?) -> Swift.Void)
+  @objc func model(id: Swift.String, progressHandler: ((WsneakersUISDK.RenderModelDownloadTask, Swift.Float) -> Swift.Void)?, completion: @escaping (WsneakersUISDK.RenderModel?, Swift.Error?) -> Swift.Void) -> WsneakersUISDK.RenderModelDownloadTask
+  @objc func clearCache() throws
+}
+public struct WsneakersUISDKViewer3DConfiguration {
+  public var initialRotationX: Swift.Float
+  public var initialRotationY: Swift.Float
+  public var initialScale: Swift.Float
+  public var pointsPerRadian: Swift.Float
+  public var zoomInReduction: Swift.Float
+  public var zoomOutReduction: Swift.Float
+  public var minDistance: Swift.Float
+  public var maxDistance: Swift.Float
+  public var rubberBandStiffness: Swift.Float
+  public var smoothAnimationStiffness: Swift.Float
+  public var smoothAnimationDamping: Swift.Float
+}
+extension WsneakersUISDK.WsneakersUISDKViewer3DConfiguration {
+  public static var defaultConfiguration: WsneakersUISDK.WsneakersUISDKViewer3DConfiguration
+  public static var sneakersConfiguration: WsneakersUISDK.WsneakersUISDKViewer3DConfiguration
+  public static var bagConfiguration: WsneakersUISDK.WsneakersUISDKViewer3DConfiguration
+}
+@_hasMissingDesignatedInitializers @objc final public class WannaDeepLinkHandler : ObjectiveC.NSObject {
+  @objc final public func handleURL(_ url: Foundation.URL)
+  @objc deinit
+}
