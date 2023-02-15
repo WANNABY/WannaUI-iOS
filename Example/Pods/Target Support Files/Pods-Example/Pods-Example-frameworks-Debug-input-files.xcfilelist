@@ -1,5 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks.sh
-${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/WannaSDK/WsneakersUISDK.framework/WsneakersUISDK
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/WannaSDK/WsneakersCoreSDK.framework/WsneakersCoreSDK
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/WannaUI/WannaUI.framework/WannaUI

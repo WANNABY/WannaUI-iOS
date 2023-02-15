@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		MUBnx4WbnY0WQYplymdj+4anncQ=
+		LyVBqRGK2mP7L6PIJaw6sVrRZNU=
 		</data>
 		<key>FarfetchBasis-Bold.otf</key>
 		<data>
@@ -22,31 +22,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		C7YkKBYoEb6ueYx/CjflxPd+fkM=
+		7cNMnVSNW/2RzrplOq1Y4hGrJoM=
 		</data>
 		<key>Modules/WannaUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		L6+82hlOWBwSFOmsuBGCgRD4CQY=
+		BOS41S5kDw3/SRQ3oayrV1EO2PY=
 		</data>
 		<key>Modules/WannaUI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		eBU8hZ8Ij0ct1UpWrxH1dMt/qk4=
+		IrI37gqHNGW5VxcjVtbZkeRIeYY=
 		</data>
 		<key>Modules/WannaUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		NZtnl7DiJq1J8UqqYLRzCy+EpcE=
+		jREnOZL5SCTnDCTk8UCX3+G3YpU=
 		</data>
 		<key>Modules/WannaUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		HKuNmXZY+ApF9Dd/xeBVofMSKWo=
+		shDZFKvAWbgsD0rjXjvkKnesZR0=
 		</data>
 		<key>Modules/WannaUI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		CczMtY1uis/MB7rxW79OBk54w30=
+		eo11YgP/Nw/rGTONiRrbEi6NlmY=
 		</data>
 		<key>Modules/WannaUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Y9DFudVs0cbJiRx5imzncdga9rE=
+		cKC5MqZagrGtz5iMFeG+80KgobM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -67,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8uAWB5OKs17crBaIg/nvFhBppFn05PCCXgcfc60Vy/4=
+			GF581VkwhvsAt272q8U1/XHnAXLZNMrbc1dmrd7Si5E=
 			</data>
 		</dict>
 		<key>FarfetchBasis-Bold.otf</key>
@@ -95,42 +95,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lZb8f2DvU7trZhfLN2ouc1vltRKfa0v5050YBLy9wuY=
+			3EPdTRndO5PZ+uFUmSVHEajJE33tWkurA+D5t1dXsTk=
 			</data>
 		</dict>
 		<key>Modules/WannaUI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NltWpCSK5CU24F5C1MAcVg8zHzeLNgcOMpmle9Ud1A4=
+			ws+vM7e7bXTg/GgzwFz9Oq0cWsK5SaT1+iU92e/Xfis=
 			</data>
 		</dict>
 		<key>Modules/WannaUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			651gMcLSTjS/qKqDvLC2EKfuoJZC8uIV0VCRJsSaJok=
+			f4v3zlvWGGJ9+VKf40muIH2nDh8tcLk25Tghq8gy3tc=
 			</data>
 		</dict>
 		<key>Modules/WannaUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tXrMrZW3dNl8rA2cNLQcjZ3aRuyc0NjD825pCQKOyx0=
+			508Cw2mBHE4Y3oVTbEXRqaBeD4mtnzPGt/kN9wz00Us=
 			</data>
 		</dict>
 		<key>Modules/WannaUI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MkKHyuuHPu+mIJFGk7SG3l8PddbSHYSeoAS9vJnTBOo=
+			OTB5cZtELiHHgMSAFMIRXjWyND4z1S4MKkEvRXcNzp4=
 			</data>
 		</dict>
 		<key>Modules/WannaUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Osphk2iU97Agein85SVoE4XHrJNEytaUuS79Q2nn5qg=
+			NiPhVxjsDY0B7rCU/cZjOhnEVL9WMObegC+f6CiGeYM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

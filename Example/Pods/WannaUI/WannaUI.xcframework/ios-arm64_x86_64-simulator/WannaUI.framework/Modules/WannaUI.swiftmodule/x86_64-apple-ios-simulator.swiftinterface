@@ -1,9 +1,8 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
-// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name WannaUI
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name WannaUI
 import Combine
 import Foundation
-import Lottie
 import Swift
 import SwiftUI
 import UIKit
@@ -18,12 +17,6 @@ extension UIKit.UIViewController {
 extension WannaUI.WannaBags.UISettings {
   public struct Error {
     public var isHidden: Swift.Bool
-  }
-}
-@available(iOS 13.0, *)
-extension WannaUI.WannaBags.UISettings {
-  public struct POI {
-    public var textHandler: ((Swift.Int) -> Swift.String?)?
   }
 }
 @available(iOS 13.0, *)
@@ -65,7 +58,6 @@ extension WannaUI.WannaBags.Error : Foundation.LocalizedError {
 extension WannaUI.WannaBags {
   public struct UISettings {
     public var canHold: WannaUI.WannaBags.UISettings.CanHold
-    public var poi: WannaUI.WannaBags.UISettings.POI
     public var onboarding: WannaUI.WannaBags.UISettings.Onboarding
     public var loading: WannaUI.WannaBags.UISettings.Loading
     public var error: WannaUI.WannaBags.UISettings.Error

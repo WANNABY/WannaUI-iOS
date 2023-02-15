@@ -49,9 +49,6 @@ private extension BagProductDetailsPage {
         let license = Settings.license
         let cacheSizeBytes = UInt(Settings.cacheSize)
 
-        // Points of interest (POI) text samples.
-        let poiTexts = [nil, "A removable top handle enables hand carry.", nil]
-
         // Start WannaUI SDK setup
         do {
             // Setup appearance
@@ -70,11 +67,6 @@ private extension BagProductDetailsPage {
                     assertionFailure("Unknown onboarding step: \(step)")
                     return ""
                 }
-            }
-
-            // Setup Points of interest (POI)
-            uiSettings.poi.textHandler = { cameraIndex in
-                poiTexts[cameraIndex]
             }
             
             // Setup loading animation

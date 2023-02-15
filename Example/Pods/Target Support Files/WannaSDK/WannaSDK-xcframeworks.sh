@@ -17,17 +17,17 @@ RSYNC_PROTECT_TMP_FILES=(--filter "P .*.??????")
 variant_for_slice()
 {
   case "$1" in
-  "WsneakersUISDK.xcframework/ios-arm64")
-    echo ""
-    ;;
   "WsneakersUISDK.xcframework/ios-arm64_x86_64-simulator")
     echo "simulator"
     ;;
-  "WsneakersCoreSDK.xcframework/ios-arm64")
+  "WsneakersUISDK.xcframework/ios-arm64")
     echo ""
     ;;
   "WsneakersCoreSDK.xcframework/ios-arm64_x86_64-simulator")
     echo "simulator"
+    ;;
+  "WsneakersCoreSDK.xcframework/ios-arm64")
+    echo ""
     ;;
   esac
 }
@@ -35,17 +35,17 @@ variant_for_slice()
 archs_for_slice()
 {
   case "$1" in
-  "WsneakersUISDK.xcframework/ios-arm64")
-    echo "arm64"
-    ;;
   "WsneakersUISDK.xcframework/ios-arm64_x86_64-simulator")
     echo "arm64 x86_64"
     ;;
-  "WsneakersCoreSDK.xcframework/ios-arm64")
+  "WsneakersUISDK.xcframework/ios-arm64")
     echo "arm64"
     ;;
   "WsneakersCoreSDK.xcframework/ios-arm64_x86_64-simulator")
     echo "arm64 x86_64"
+    ;;
+  "WsneakersCoreSDK.xcframework/ios-arm64")
+    echo "arm64"
     ;;
   esac
 }
@@ -129,6 +129,6 @@ install_xcframework() {
   echo "Copied $source to $destination"
 }
 
-install_xcframework "${PODS_ROOT}/WannaSDK/WsneakersUISDK.xcframework" "WannaSDK" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
-install_xcframework "${PODS_ROOT}/WannaSDK/WsneakersCoreSDK.xcframework" "WannaSDK" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/WannaSDK/WsneakersUISDK.xcframework" "WannaSDK" "framework" "ios-arm64_x86_64-simulator" "ios-arm64"
+install_xcframework "${PODS_ROOT}/WannaSDK/WsneakersCoreSDK.xcframework" "WannaSDK" "framework" "ios-arm64_x86_64-simulator" "ios-arm64"
 
