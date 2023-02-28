@@ -6,6 +6,7 @@ import CryptoKit
 import Foundation
 import Metal
 import MetalKit
+import OSLog
 import Swift
 import SwiftUI
 import UIKit

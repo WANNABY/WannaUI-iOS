@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		MUBnx4WbnY0WQYplymdj+4anncQ=
+		LyVBqRGK2mP7L6PIJaw6sVrRZNU=
 		</data>
 		<key>FarfetchBasis-Bold.otf</key>
 		<data>
@@ -22,19 +22,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		hvNOiFfJNcwHqHqVq+xHl61S1NQ=
+		GJXRuymDOZ97A6MV96bY6kVrKCk=
 		</data>
 		<key>Modules/WannaUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		F+eGziGkvc0RCGI8bW1+HHsQZck=
+		ASaUplLGXs8ejQw45YKoSaVNa8Y=
 		</data>
 		<key>Modules/WannaUI.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		p/1L+PINBewfndJ8zBIzu13I+vw=
+		T4cohGOIU+RoVQmUBk2Igy0iE9Y=
 		</data>
 		<key>Modules/WannaUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		bsD1mPzXdL29RtHKtBJqW3ZKn9M=
+		HNVw8oO39dUzcztflqLp2YF/r5w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -55,7 +55,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8uAWB5OKs17crBaIg/nvFhBppFn05PCCXgcfc60Vy/4=
+			GF581VkwhvsAt272q8U1/XHnAXLZNMrbc1dmrd7Si5E=
 			</data>
 		</dict>
 		<key>FarfetchBasis-Bold.otf</key>
@@ -83,21 +83,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6xV+554f9jT1R1jbioVFL2xT8eDI4A4O7eVEJTkM72E=
+			utbesSQOZdvxfKVNeDxqAXs7Iv4qyI516WAIOZV1Z0g=
 			</data>
 		</dict>
 		<key>Modules/WannaUI.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fB2o5T0hbLE1QhSEVOiQ80V8JK4JZj1k2lSK5Epsabc=
+			x9NJ0CdwD68OT9Ixcb1nu5NrigJLwfP91J8V4iZqZug=
 			</data>
 		</dict>
 		<key>Modules/WannaUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TMP4KE7zSiNqrjHZAehCyt/TZdEgCcDqzPNMjyO2BsE=
+			UPND9E4MLEsk9wW6vHinGlZHoFGBBUPsz5BA2gVF5KE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

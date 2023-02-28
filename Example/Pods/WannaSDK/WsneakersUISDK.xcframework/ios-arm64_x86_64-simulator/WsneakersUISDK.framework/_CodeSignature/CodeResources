@@ -118,11 +118,11 @@
 		</data>
 		<key>Modules/WsneakersUISDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		nVMRn9PYpwBMhSOxVP0NUS0ZEu8=
+		BG92ArQp8Y9MW0z8JvQb4ni8zrk=
 		</data>
 		<key>Modules/WsneakersUISDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		qxHufaRFLxUh462Gw12s8AQUq8I=
+		mWHY4qfmNmEgoYh9Yhx0mx3psRc=
 		</data>
 		<key>Modules/WsneakersUISDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -130,11 +130,11 @@
 		</data>
 		<key>Modules/WsneakersUISDK.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		nVMRn9PYpwBMhSOxVP0NUS0ZEu8=
+		BG92ArQp8Y9MW0z8JvQb4ni8zrk=
 		</data>
 		<key>Modules/WsneakersUISDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		qxHufaRFLxUh462Gw12s8AQUq8I=
+		mWHY4qfmNmEgoYh9Yhx0mx3psRc=
 		</data>
 		<key>Modules/WsneakersUISDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -142,11 +142,11 @@
 		</data>
 		<key>Modules/WsneakersUISDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		8JjP5RgW1VSut+GR7iHWCP8VmZ8=
+		3D+XhOvuHMzAz6xxx71sNt1WWNw=
 		</data>
 		<key>Modules/WsneakersUISDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Vs4avJXA+N8jRBr3kaBdZPr3034=
+		8l4wDPxc6eQ/FGwBtTHjrys0bd8=
 		</data>
 		<key>Modules/WsneakersUISDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -154,11 +154,11 @@
 		</data>
 		<key>Modules/WsneakersUISDK.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		8JjP5RgW1VSut+GR7iHWCP8VmZ8=
+		3D+XhOvuHMzAz6xxx71sNt1WWNw=
 		</data>
 		<key>Modules/WsneakersUISDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		Vs4avJXA+N8jRBr3kaBdZPr3034=
+		8l4wDPxc6eQ/FGwBtTHjrys0bd8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -380,14 +380,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4EBeqpnixJFv/a4uXJuW1IRULb60HXhzZ/B1K2vTAjE=
+			H5h9RGkR+OFA187YkXSMTgB/2+IH5s9ChR5qJ3gxXHQ=
 			</data>
 		</dict>
 		<key>Modules/WsneakersUISDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			trkx1y2jfkiaQYatKYsQRIud17QFKCgZ35YV34qJcW4=
+			Kk3zhK0FPHKge61cJCCH+KkP7jMYevAtBMJqppOpadk=
 			</data>
 		</dict>
 		<key>Modules/WsneakersUISDK.swiftmodule/arm64.swiftdoc</key>
@@ -401,14 +401,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4EBeqpnixJFv/a4uXJuW1IRULb60HXhzZ/B1K2vTAjE=
+			H5h9RGkR+OFA187YkXSMTgB/2+IH5s9ChR5qJ3gxXHQ=
 			</data>
 		</dict>
 		<key>Modules/WsneakersUISDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			trkx1y2jfkiaQYatKYsQRIud17QFKCgZ35YV34qJcW4=
+			Kk3zhK0FPHKge61cJCCH+KkP7jMYevAtBMJqppOpadk=
 			</data>
 		</dict>
 		<key>Modules/WsneakersUISDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -422,14 +422,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			j/SOVrzSIvwad6eH2jw4YRdaqOUDKRPNdmnKbY6M36E=
+			D8FqH4XgNELqnAaBD7sBJJI8MvzxQxMlUZ5S4vUeZbc=
 			</data>
 		</dict>
 		<key>Modules/WsneakersUISDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2mL/eB4khLhmIRtmkO6tyE0XK5brxqReO6lt4Bq4WcQ=
+			dwsrYYTOrApldxelO8iMkFbLtOYpSEcmlENi/EqSF2c=
 			</data>
 		</dict>
 		<key>Modules/WsneakersUISDK.swiftmodule/x86_64.swiftdoc</key>
@@ -443,14 +443,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			j/SOVrzSIvwad6eH2jw4YRdaqOUDKRPNdmnKbY6M36E=
+			D8FqH4XgNELqnAaBD7sBJJI8MvzxQxMlUZ5S4vUeZbc=
 			</data>
 		</dict>
 		<key>Modules/WsneakersUISDK.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2mL/eB4khLhmIRtmkO6tyE0XK5brxqReO6lt4Bq4WcQ=
+			dwsrYYTOrApldxelO8iMkFbLtOYpSEcmlENi/EqSF2c=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
