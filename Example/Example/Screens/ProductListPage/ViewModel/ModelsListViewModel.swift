@@ -58,10 +58,11 @@ final class ModelsListViewModel: ModelsListViewModelType {
                     self?.handleStorageCreationError(error)
                 }
             }
-            guard let result = self?.storage?.loadModelsSync() else { return }
-            DispatchQueue.main.async {
-                self?.handleModelsResult(result)
-            }
+            self?.storage?.fetchModels(completion: { result in
+                DispatchQueue.main.async {
+                    self?.handleModelsResult(result)
+                }
+            })
         }
     }
     
