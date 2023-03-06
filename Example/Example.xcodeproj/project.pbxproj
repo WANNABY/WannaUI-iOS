@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		200883DA29B06CE6000F8F7C /* Storage+FetchModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200883D929B06CE6000F8F7C /* Storage+FetchModels.swift */; };
 		568C7C55BA0CDAE6CF418026 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037006766E6BB23486DBDF8D /* Pods_Example.framework */; };
 		5D1FF116293A0F3200164F2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FF113293A0F3200164F2D /* LaunchScreen.storyboard */; };
 		5D1FF117293A0F3200164F2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FF115293A0F3200164F2D /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		037006766E6BB23486DBDF8D /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		200883D929B06CE6000F8F7C /* Storage+FetchModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storage+FetchModels.swift"; sourceTree = "<group>"; };
 		5D1FF110293A0D4100164F2D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D1FF114293A0F3200164F2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D1FF115293A0F3200164F2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				E469A76D294B0B6300292541 /* UITableView+Combine.swift */,
+				200883D929B06CE6000F8F7C /* Storage+FetchModels.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 			files = (
 				E4D531272948E2A400D87386 /* Coordinator.swift in Sources */,
 				5D4DB6FD2937C8E700A15B9A /* ModelsListViewController.swift in Sources */,
+				200883DA29B06CE6000F8F7C /* Storage+FetchModels.swift in Sources */,
 				E4BA3A97288978A600987CAC /* AppDelegate.swift in Sources */,
 				5D9592E32936876400B917C2 /* BagProductDetailsPage.swift in Sources */,
 				5D4DB6FB2937C8E700A15B9A /* ModelsListViewModel.swift in Sources */,
