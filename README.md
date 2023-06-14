@@ -2,6 +2,7 @@
 
 <!-- TOC -->
 - [Requirements and limitations](#requirements-and-limitations)
+    - [Terms of use](#terms-of-use)
 - [Demo app](#demo-app)
 - [Installation](#installation)
     * [Cocoapods](#cocoapods)
@@ -28,6 +29,10 @@ WANNA’s 3D Viewer for handbags was specifically crafted to answer the industry
 
 Supported environments:
 * iOS 14 and later
+
+### Terms of use
+
+Working with WANNA UI SDK is subject to [Terms of use](https://wanna.fashion/terms-trial). Please review them before downloading the SDK and starting to use it.
 
 ## Demo app
 * A [demo application](https://github.com/WANNABY/WannaUI-iOS/tree/master/Example) showing the integration of our SDK using cocoapods.
