@@ -1,6 +1,0 @@
-framework module WsneakersCoreSDK {
-  umbrella header "WsneakersCoreSDK.h"
-
-  export *
-  module * { export * }
-}
