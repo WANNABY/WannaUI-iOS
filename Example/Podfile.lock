@@ -1,10 +1,10 @@
 PODS:
-  - WannaSDK (6.0.1)
-  - WannaUI (1.0.1):
-    - WannaSDK (~> 6.0)
+  - WannaSDK (6.1.0)
+  - WannaUI (1.0.2):
+    - WannaSDK (~> 6.1)
 
 DEPENDENCIES:
-  - WannaUI (~> 1.0)
+  - WannaUI (= 1.0.2)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -12,9 +12,9 @@ SPEC REPOS:
     - WannaUI
 
 SPEC CHECKSUMS:
-  WannaSDK: 146b453258113007904fc9930d81fdee38116068
-  WannaUI: 3f3b2606839e2cd32efb8edd975174051e4c8319
+  WannaSDK: a8ddb830ac72e2a8604b43cc526f84223de31e68
+  WannaUI: d6611291d7efab53383eb522bf4a0af58a0d70c5
 
-PODFILE CHECKSUM: 973ad8540afced2b4dd8161559313fa29f097081
+PODFILE CHECKSUM: 2a6b51e113b8a9235cd2503cb58874a1ee55c412
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.14.3
