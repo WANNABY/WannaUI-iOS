@@ -1,7 +1,7 @@
 PODS:
-  - WannaSDK (7.0.1)
-  - WannaUI (1.0.4):
-    - WannaSDK (~> 7.0.1)
+  - WannaSDK (7.0.4)
+  - WannaUI (1.0.5):
+    - WannaSDK (~> 7.0)
 
 DEPENDENCIES:
   - WannaUI
@@ -12,8 +12,8 @@ SPEC REPOS:
     - WannaUI
 
 SPEC CHECKSUMS:
-  WannaSDK: 73d38d52a0c2d562c0dd6d9684b124cdfe17d323
-  WannaUI: 68ef79b99bbb881b6fd13610fa43a7dbdacbddf2
+  WannaSDK: eed9d29b7a30f43a245a8f469d1666d0bdd73c83
+  WannaUI: ee1db2569242c3464a7b7666f1b35b6b4a4618aa
 
 PODFILE CHECKSUM: 13c2c67897ede5b42791e3e51293899ea72aa133
 
